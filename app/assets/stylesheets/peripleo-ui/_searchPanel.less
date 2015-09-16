@@ -1,0 +1,145 @@
+@import "../globals.less";
+@import "_autoComplete.less";
+
+#searchbox {
+  position:relative;
+  width:100%;
+  margin:0;
+  .box-shadow(0, 3px, 7px, 0, rgba(0,0,0,0.3));
+
+  form {
+    margin:0;
+    padding:0;
+  }
+
+  span { width: 100%; }
+
+  input[type='text'] {
+    -webkit-appearance: none;
+    width:100%;
+    border:none;
+    outline:none;
+    padding:8px 32px 8px 10px;
+    font-family:Roboto, Arial, sans-serif;
+    font-size:15px;
+    font-weight:300;
+    .rounded-corners-top(2px);
+  }
+
+  input.search-at {
+    padding-left:36px;
+  }
+
+  input[type='text']:focus {
+    box-shadow:0 0 0 1px #4e78ac;
+    -webkit-box-shadow:0 0 0 1px #4e78ac;
+    -moz-box-shadow:0 0 0 1px #4e78ac;
+    -o-box-shadow:0 0 0 1px #4e78ac;
+  }
+
+  #subsearch-indicator {
+    position:absolute;
+    font-size:13px;
+    top:6px;
+    left:8px;
+    border-radius:50%;
+    text-align:center;
+    padding-top:3px;
+    color:#fff;
+    background-color:#4e78ac;
+    border:1px solid #4e78ac;
+    width:19px;
+    height:16px;
+  }
+
+  #search-icon {
+    position:absolute;
+    top:9px;
+    height:15px;
+    width:15px;
+    font-size:15px;
+    left:374px;
+    color:#9f9f9f;
+    z-index:1;
+  }
+
+  #search-icon.clear {
+    top:8px;
+    cursor:pointer;
+  }
+
+}
+
+.list-all {
+  color:#4e78ac;
+  cursor:pointer;
+
+  .icon {
+    position:relative;
+    font-size:14px;
+    top:1px;
+    margin-right:2px;
+  }
+
+} /* .list-all */
+
+.list-all:hover {
+  .label { text-decoration:underline; }
+}
+
+#button-explore {
+  position:absolute;
+  top:0;
+  left:406px;
+  box-sizing:border-box;
+  width:34px;
+  height:34px;
+  padding:5px 0;
+  background-color:#fff;
+  font-family:Peripleo;
+  font-size:28px
+}
+
+#button-explore.enabled {
+  color:#fff;
+  background-color:#4e78ac;
+}
+
+#button-listall {
+  background-color:#fff;
+  border-top:1px solid #e6e6e6;
+  .rounded-corners-bottom(2px);
+  padding:11px 10px;
+  color:#686868;
+}
+
+#button-search-at {
+  color:#4e78ac;
+  background-color:#fff;
+  position:relative;
+  margin-top:4px;
+  padding:10px;
+  .rounded-corners(2px);
+  .box-shadow(0, 2px, 6px, 0, rgba(0,0,0,0.3));
+  color:#4e78ac;
+
+  .icon {
+    font-size: 14px;
+    margin-right:3px;
+  }
+
+  .all, .query {
+    cursor:pointer;
+  }
+
+  .no-query:hover .underline, .underline:hover {
+    text-decoration:underline;
+  }
+
+  .totals { color:#686868; }
+
+}
+
+#image-workshop {
+  position:absolute;
+}
