@@ -1,6 +1,7 @@
 # PERIPLEO Wrapper
 
-A repurposed branch of the Peripleo geospatial search engine, for use with THEMIS.
+A repurposed branch of the [Peripleo](http://pelagios.org/peripleo/map) geospatial search
+engine, for use with THEMIS.
 
 ## Notes
 
