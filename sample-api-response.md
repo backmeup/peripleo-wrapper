@@ -1,3 +1,108 @@
+The aim is to generate a data structure according to the following scheme:
+
+```
+{
+  "total": ... ,  # number of total results
+
+  "time_histogram": [
+    {
+      "year": ...
+      "val": ...
+    }
+  ],
+
+  "top_places": [
+    {  
+      "identifier":"http://pleiades.stoa.org/places/423025",
+      "title":"Roma",
+      "object_type":"Place",
+      "description":"The capital of the Roman Republic and Empire",
+      "names":[  
+        "Rome",
+        "Roma/Rome",
+        "Roma",
+        "Rom"
+      ],
+      "matches":[  
+        "http://dare.ht.lu.se/places/1438",
+        "http://www.trismegistos.org/place/2058",
+        "http://vici.org/vici/1692",
+        "http://gazetteer.dainst.org/place/2323295",
+        "http://nomisma.org/id/rome"
+      ],
+      "place_category":"SETTLEMENT",
+      "geo_bounds":{  
+        "min_lon":12.4843,
+        "max_lon":12.4843,
+        "min_lat":41.8926,
+        "max_lat":41.8926
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+           12.4843,
+           41.8926
+        ]
+      },
+      "result_count":112788
+   }
+  ],
+
+  "items": [
+  {  
+     "identifier":"http://pleiades.stoa.org/places/540997",
+     "title":"Pagasaeus/Demetriacus Sinus",
+     "description":"An ancient place, cited: BAtlas 55 D2 Pagasaeus/Demetriacus Sinus",
+     "object_type":"Place",
+     "geo_bounds":{  
+        "min_lon":22.5,
+        "max_lon":23.0,
+        "min_lat":39.0,
+        "max_lat":39.5
+     },
+     "geometry":{  
+        "type":"Polygon",
+        "coordinates":[  
+            [  
+               [  
+                  23,
+                  39
+               ],
+               [  
+                  23,
+                  39.5
+               ],
+               [  
+                  22.5,
+                  39.5
+               ],
+               [  
+                  22.5,
+                  39
+               ],
+               [  
+                  23,
+                  39
+               ]
+            ]
+         ]
+      },
+      "names":[  
+         "Demetriacus Sinus",
+         "Pagasaeus",
+         "Pagasetikos Kolpos",
+         "Pelasgikos Kolpos",
+         "Barrington Atlas grid 55 D2"
+      ]
+    }
+  ],
+
+  "took_ms": ... # query time in ms
+}
+```
+
+Full example from original Peripleo:
+
 ```
 {  
    "total":478677,
