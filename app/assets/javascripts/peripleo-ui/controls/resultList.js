@@ -10,7 +10,7 @@ define(['common/formatting', 'peripleo-ui/events/events'], function(Formatting, 
     var element = jQuery(
           '<div id="search-results">' +
           '  <ul></ul>' +
-          '  <div id="wait-for-next"><img src="/peripleo/static/images/wait-circle.gif"></div>' +
+          '  <div id="wait-for-next"><img src="/assets/images/wait-circle.gif"></div>' +
           '</div>'),
 
         /** DOM element shorthands **/
