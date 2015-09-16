@@ -1,10 +1,15 @@
 # PERIPLEO Wrapper
 
-A repurposed branch of the [Peripleo](http://pelagios.org/peripleo/map) geospatial search
-engine, for use with THEMIS.
+A branch of the [Peripleo](http://pelagios.org/peripleo/map) spatio-temporal search engine from the
+[Pelagios project](http://pelagios-project.blogspot.co.uk/2015/07/peripleo-sneak-preview.html), to
+be repurposed for use with BackMeUp/THEMIS.
 
-## Notes
+I'm bootstrapping this as a Play Framework (v 2.4.3) project. At a later stage the interfacing
+functionality may be pulled into the client entirely, with no additional server dependencies.
 
-I'm bootstrapping this with the Play Framework (current version at time of writing, 2.4.3).
+## Installation
 
-* `activator run` to run
+* Install [Play Framework v2.4.3](https://www.playframework.com/download) (note: current versions
+  require Java JDK 8).
+* In the project folder, type `activator run` to launch the application. Peripleo will be
+  running at http://localhost:9000/peripleo
