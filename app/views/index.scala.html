@@ -1,7 +1,20 @@
-@(message: String)
-
-@main("Welcome to Play") {
-
-    @play20.welcome(message)
-
-}
+@()
+<html>
+  <head>
+    <title>THEMIS - Peripleo</title>
+    <link rel="icon" type="image/png" href="@routes.Assets.versioned("images/favicon.png")" />
+    <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/main.css")"/>
+    <link rel="stylesheet" href="@routes.Assets.versioned("lib/leaflet/leaflet.css")"/>
+    <script type="text/javascript" src="@routes.Assets.versioned("lib/jquery/jquery.min.js")"></script>
+    <script type="text/javascript" src="@routes.Assets.versioned("lib/velocity/velocity.min.js")"></script>
+    <script type="text/javascript" src="@routes.Assets.versioned("lib/numeral/min/numeral.min.js")"></script>
+    <script type="text/javascript" src="@routes.Assets.versioned("lib/typeaheadjs/typeahead.jquery.min.js")"></script>
+    <script type="text/javascript" src="@routes.Assets.versioned("lib/leaflet/leaflet.js")"></script>
+    <script data-main="@routes.Assets.versioned("javascripts/peripleo-ui.js")"  type="text/javascript" src="@routes.Assets.versioned("lib/requirejs/require.min.js")"></script>
+  </head>
+  <body>
+    <div id="map"></div>
+    <div id="toolbar"></div>
+    <div id="controls"></div>
+  </body>
+</html>

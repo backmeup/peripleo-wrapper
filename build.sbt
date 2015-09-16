@@ -10,6 +10,12 @@ libraryDependencies ++= Seq(
   jdbc,
   cache,
   ws,
+  "org.webjars" % "requirejs" % "2.1.14-1",
+  "org.webjars" % "jquery" % "1.9.1",
+  "org.webjars" % "leaflet" % "0.7.5",
+  "org.webjars.bower" % "velocity" % "1.2.2",
+  "org.webjars.bower" % "numeral" % "1.5.3",
+  "org.webjars" % "typeaheadjs" % "0.11.1",
   specs2 % Test
 )
 
