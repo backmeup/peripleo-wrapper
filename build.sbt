@@ -12,6 +12,7 @@ libraryDependencies ++= Seq(
   ws,
   "org.webjars" % "requirejs" % "2.1.14-1",
   "org.webjars" % "jquery" % "1.9.1",
+  "org.webjars" % "jquery-ui" % "1.11.4",
   "org.webjars" % "leaflet" % "0.7.5",
   "org.webjars.bower" % "velocity" % "1.2.2",
   "org.webjars.bower" % "numeral" % "1.5.3",
